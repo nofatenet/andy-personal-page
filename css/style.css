@@ -15,6 +15,7 @@
     --clr-dark: #333;
     --clr-accent: #8eac9d;
     --clr-grad: linear-gradient(90deg, rgb(66, 100, 96) 14%, rgb(94, 195, 226) 78%, rgba(100,161,204,1) 100%);
+    --clr-graddark: linear-gradient(90deg, rgb(12, 17, 17) 14%, rgb(94, 195, 226) 78%, rgb(80, 92, 100) 100%);
 
     --fs-h1: 3rem;
     --fs-h2: 2rem;
@@ -58,6 +59,15 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+a {
+    color: #314239;
+    background: #8eac9d;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 section {
@@ -113,6 +123,9 @@ h2 {
 h3 {
     font-size: var(--fs-h3); }
 
+.section-center {
+    text-align: center;
+}
 
 .section-title {
     margin-bottom: .25em;
@@ -157,6 +170,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    position: relative;
 }
 
 .logo {
@@ -165,7 +179,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
+    background: var(--clr-graddark);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -182,7 +196,7 @@ header {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly; /* flex-direction is column so This means its Spaced evenly on the Y-Axis */
+    /* justify-content: space-evenly; /* flex-direction is column so This means its Spaced evenly on the Y-Axis */
     align-items: left;
     margin: 10px;
     padding: 10px;
@@ -193,6 +207,7 @@ header {
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
     text-decoration: none;
+    font-family: var(--ff-secondary);
 }
 
 .nav-link:hover {
@@ -200,21 +215,25 @@ header {
 }
 
 .nav-toggle {
-    padding: 0.5em;
+    padding: 1em;
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 999;
 }
 
-.nav-open .nav {
-    transform: translateX(50%);
+.nav-toggle:focus {
+    outline: 0px solid var(--clr-accent);   /* cannot focus hamburger */
 }
 
- .nav-open .nav-toggle {
+.nav-open .nav {
+    transform: translateX(66%);
+}
+
+.nav-open .nav-toggle {
     position: fixed;    /* only fixed when toggled */
 }
 
@@ -236,7 +255,8 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: fixed;
+    margin: -10px;
 }
 
 .hamburger,
@@ -262,8 +282,7 @@ header {
 .hamburger::after {
     bottom: 6px; }
 
-
-/* INTRO */ 
+/* INTRO */
 
 .intro {
     position: relative;
@@ -480,5 +499,12 @@ header {
     padding: 0.5em;
 }
 
+/* PORTFOLIO */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
 
