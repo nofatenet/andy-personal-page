@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Source Code Pro", sans-serif;
+    background-image: linear-gradient(0deg, rgb(43, 66, 66) 22%, rgb(5, 9, 9) 84%);
+    display: flex;
+    flex-direction: column; /* make it vertical */
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+}
+
+.music-container {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    padding: 20px 40px;
+    margin: 80px 0;
+    position: relative;
+    z-index: 4;
+}
+
+.img-container {
+    position: relative;
+    width: 96px;
+}
+
+.img-container::after {
+    content: "";                    /* needs to be an empty string */
+    background-color: #333;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* centered */
+}
+
+.img-container img {
+    width: inherit;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: #333;
+    border: 0;
+    color: #999;
+    font-size: 16px;
+    padding: 8px;
+    margin: 0 16px;
+    cursor: pointer;
+}
+
+.action-btn-big {
+    color: #999;
+    font-size: 28px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: rgba(122,122,122, 0.2);
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.music-info h4 {
+    margin: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container {
+    background: #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.progress {
+    /* background-color: #222; */
+    background-image: linear-gradient(90deg, rgb(85, 133, 133) 10%, rgb(30, 70, 70) 90%);
+    border-radius: 2px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s linear;
+}
+
+.progress::after {
+    content: "o";
+}
