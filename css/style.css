@@ -16,6 +16,7 @@
     --clr-accent: #8eac9d;
     --clr-grad: linear-gradient(90deg, rgb(66, 100, 96) 14%, rgb(94, 195, 226) 78%, rgba(100,161,204,1) 100%);
     --clr-graddark: linear-gradient(90deg, rgb(12, 17, 17) 14%, rgb(94, 195, 226) 78%, rgb(80, 92, 100) 100%);
+    --clr-gradacc: linear-gradient(180deg, rgb(56, 60, 56) 2%, rgb(27, 42, 47) 8%, rgb(0, 1, 9) 100%);
 
     --fs-h1: 3rem;
     --fs-h2: 2rem;
@@ -462,7 +463,7 @@ header {
 /* FOOTER */
 
 .footer {
-    background: #222;
+    background: #111;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
@@ -470,8 +471,9 @@ header {
 }
 
 .footer a {
-    color: inherit;
+    color: #bbb;
     text-decoration: none;
+    background: var(--clr-gradacc);
 }
 
 .footer-link {
