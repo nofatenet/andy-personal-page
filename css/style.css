@@ -25,6 +25,8 @@
 
     --bs:   0.25em 0.25em .7em rgba(0,0,0,.3),
             0.125em 0.125em .4em rgba(0,0,0,.5);
+    
+    scrollbar-color: #232323 #323232;
 }
 
 @media (min-width: 800px) {
