@@ -22,6 +22,7 @@
     --fs-h2: 2rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+    --fs-small: 0.5rem;
 
     --bs:   0.25em 0.25em .7em rgba(0,0,0,.3),
             0.125em 0.125em .4em rgba(0,0,0,.5);
@@ -511,4 +512,11 @@ header {
     margin: 0 auto;
 }
 
+.mm-bg {
+    background-color: #111;
+    margin-bottom: 100px;
+}
 
+.small {
+    font-size: var(--fs-small);
+}
