@@ -451,6 +451,10 @@ header {
     opacity: 0.6;
 }
 
+cite {
+    font-size: smaller;
+}
+
 
 .hide {
     display: none;
