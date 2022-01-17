@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -68,7 +69,7 @@
         <a href="#work" class="btn">My Work</a>
     </section>
     <!-- About Me -->
-    <section class="about-me" id="about">
+    <section class="about-me slideshow-container" id="about">
         <h2 class="section-title section-title-about">Who I am</h2>
         <p class="section-subtitle section-subtitle-about"> I am, what we people call, a <strong>Fachinformatiker fuer
                 Anwendungsentwicklung</strong>. It's fun, everybody should try it!</p>
@@ -82,7 +83,21 @@
                 But since the decline of that, and the rise of the Internet, I made a virtual one with VUE.JS which was a lot of fun.
                 Ask me about it!</p>
         </div>
-        <img src="img/bass.jpg" alt="Andy" class="about-me-img">
+
+        <!-- <div class="slideshow-container">
+            <div class="slides animation">
+            <img src="img/bass.jpg" alt="Andy" class="about-me-img slideImage">
+        </div>
+            <div class="slides animation">
+                <img src="img/bass2.jpg" alt="Andy" class="about-me-img slideImage">
+            </div>
+                    <p class="player">▶</p>
+        </div> -->
+
+        <img src="img/bass.jpg" alt="Andy" class="about-me-img slideImage slides animation">
+        <img src="img/bass2.jpg" alt="Andy" class="about-me-img slideImage slides animation">
+        <span class="player">▶</span>
+
     </section>
     <!-- My Work -->
     <section class="my-work" id="work">
@@ -137,6 +152,7 @@
         </ul>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>
