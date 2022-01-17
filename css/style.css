@@ -331,6 +331,15 @@ header {
         background-image: url(../img/services-bg.jpg);
         background-size: cover;
     }
+    .player{
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .player{
+        display: none;
+    }
 }
 
 .my-services {
@@ -417,6 +426,11 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+    }
+    .player{
+        grid-area: img;
+        position: relative;
+        z-index: 3;
     }
 }
 
