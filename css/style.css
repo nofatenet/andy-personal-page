@@ -374,6 +374,16 @@ header {
     margin: 0 auto;
 }
 
+.section-title-contact::after {
+    content: "";
+    display: block;
+    width: 9em;
+    height: 1px;
+    margin: 0.5rem auto 1em;
+    background: var(--clr-light);
+    opacity: .2;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -487,8 +497,8 @@ cite {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
-    font-size: 1.2em;
+    padding: 2.5em 0 0 0;
+    font-size: 1em;
 }
 
 .footer a {
@@ -506,6 +516,11 @@ cite {
     opacity: 0.6;
 }
 
+.footer-bottom{
+    font-size: 0.6em;
+    margin-top: 3em;
+}
+
 .social-list {
     list-style: none;
     display: flex;
@@ -520,6 +535,7 @@ cite {
 
 .social-list-link {
     padding: 0.5em;
+    border-radius: 4px;
 }
 
 /* PORTFOLIO */
