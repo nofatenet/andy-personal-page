@@ -1,5 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-link");
+const btnDropDownDom = document.querySelector("#btnDropdown")
 
 navToggle.addEventListener("click", () => {
     document.body.classList.toggle("nav-open");
@@ -8,5 +9,10 @@ navToggle.addEventListener("click", () => {
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         document.body.classList.remove("nav-open");
+        btnDropDownDom.classList.remove("show");
     });
 });
+
+const dropFunction = () => {
+    btnDropDownDom.classList.toggle("show");
+};
