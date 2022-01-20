@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,9 +26,21 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">What I focus on</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">What I do</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">My Works</a>
+                    <span class="dropdown">
+                        <button class="dropbtn" onclick="dropFunction()">⇲
+                        </button>
+                            <div class="dropdown-content" id="btnDropdown">
+                                <ul>
+                                    <li><a href="#closedin" class="nav-link">Closed In</a></li>
+                                    <li><a href="#closedinadd" class="nav-link">Closed In Addendum</a></li>
+                                </ul>
+                            </div>
+                        </span>
+                </li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a>
             </ul>
         </nav>
     </header>
@@ -116,10 +128,10 @@
             <a href="portfolio-audioplayer.html" class="portfolio-item">
                 <img src="img/work2.jpg" alt="" class="portfolio-img">
             </a>
-            <a href="portfolio-closed_in.html" class="portfolio-item">
+            <a href="portfolio-closed_in.html" class="portfolio-item" id="closedin">
                 <img src="img/work3.jpg" alt="" class="portfolio-img">
             </a>
-            <a href="portfolio-closed_in_addendum.html" class="portfolio-item">
+            <a href="portfolio-closed_in_addendum.html" class="portfolio-item" id="closedinadd">
                 <img src="img/work4.jpg" alt="" class="portfolio-img">
             </a>
             <a href="#" class="portfolio-item">
@@ -128,7 +140,7 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="section-title-contact">Contact Me</p>
+        <p class="section-title-contact" id="contact">Contact Me</p>
         <!-- <a href="mailto:gude@no-fate.net" class="footer-link"> -->
         <h3>gude@no-fate.net</h3>
         <!-- </a> -->
