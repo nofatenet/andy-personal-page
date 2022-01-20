@@ -234,7 +234,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(66%);
+    transform: translateX(33%);
 }
 
 .nav-open .nav-toggle {
@@ -284,7 +284,66 @@ header {
 .hamburger::before {
     top: 6px; }
 .hamburger::after {
-    bottom: 6px; }
+    bottom: 6px;
+}
+
+
+/* DropDown */
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown ul{
+    background-color: var(--clr-dark);
+    padding: 10px 32px;
+}
+
+.dropdown li{
+    list-style: none;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: var(--clr-light);
+    padding: 2px 4px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn:hover {
+    color: var(--clr-accent);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--clr-light);
+    padding: 2px 6px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin: 4px 0 4px -16px;
+}
+
+.dropdown-content a:hover {
+    color: var(--clr-dark);
+}
+
+.show {
+    display: block;
+}
+
 
 /* INTRO */
 
@@ -336,9 +395,18 @@ header {
     }
 }
 
+.nav-open .nav {
+    transform: translateX(66%);
+}
+
 @media (max-width: 600px) {
     .player{
         display: none;
+    }
+
+    /* Nav needs more space on small-screen. Higher Dude % == Smaller Menu */
+    .nav-open .nav {
+        transform: translateX(33%);
     }
 }
 
