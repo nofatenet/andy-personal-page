@@ -31,7 +31,7 @@
 }
 
 ::selection {
-  background: var(--clr-accent: #8eac9d);
+  background: var(--clr-accent);
 }
 
 @media (min-width: 800px) {
