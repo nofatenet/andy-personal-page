@@ -30,6 +30,10 @@
     scrollbar-color: #232323 #323232;
 }
 
+::selection {
+  background: var(--clr-accent: #8eac9d);
+}
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4rem;
