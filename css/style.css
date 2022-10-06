@@ -205,7 +205,7 @@ header {
     height: 100%;
     flex-direction: column;
     /* justify-content: space-evenly; /* flex-direction is column so This means its Spaced evenly on the Y-Axis */
-    align-items: left;
+    /* align-items: left; /* Error: There is no "left" value for this. Maybe flex-start? Well, looks OK as is. */
     margin: 10px;
     padding: 10px;
 }
