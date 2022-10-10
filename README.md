@@ -1,11 +1,12 @@
 # andy-personal-page
 It's all about me.
 Work in Progress.
+Always lerning new things.
 
 A personal portfolio.
 Built without using any web frameworks, just vanilla JS, HTML and CSS.
 
-https://andyloesch.netlify.app/
+http://www.andyloesch.de -> will redirect to -> https://andyloesch.netlify.app/
 
 Hinweis (In German):
 
