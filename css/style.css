@@ -446,6 +446,13 @@ header {
     margin: 0 auto;
 }
 
+.service-img {
+    margin: auto;
+    width: 320px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-accent);
+}
+
 .section-title-contact::after {
     content: "";
     display: block;
