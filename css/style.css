@@ -403,6 +403,7 @@ header {
     transform: translateX(66%);
 }
 
+/* small Devices */
 @media (max-width: 600px) {
     .player{
         display: none;
@@ -412,7 +413,12 @@ header {
     .nav-open .nav {
         transform: translateX(33%);
     }
+
+    .social-list{
+        font-size: 90%; /* eliminate line-break */
+    }
 }
+/* END of small Devices */
 
 .my-services {
     background-color: var(--clr-dark);
