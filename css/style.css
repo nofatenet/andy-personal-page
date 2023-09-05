@@ -172,6 +172,11 @@ h3 {
     margin-bottom: 2em;
 }
 
+.section-mm-work {
+    color: var(--clr-accent);
+    margin-bottom: 2em;
+}
+
 /* NAV */
 
 header {
