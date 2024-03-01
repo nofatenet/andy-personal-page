@@ -1,7 +1,7 @@
-# andy-personal-page
+# Andy's Personal Page
 It's all about me.
 Work in Progress.
-Always lerning new things.
+Always learning new things.
 
 A personal portfolio.
 Built without using any web frameworks, just vanilla JS, HTML and CSS.
