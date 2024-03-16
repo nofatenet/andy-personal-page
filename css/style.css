@@ -393,7 +393,7 @@ header {
     position: relative;
     width: calc(100% + 1.5em);
     opacity: 0.5;
-    left: -12em;
+    left: -1em;
     top: 2em;
     font-size: 0.8em;
 }
